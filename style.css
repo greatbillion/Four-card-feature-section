@@ -1,0 +1,114 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+body {
+    background-color: hsl(0, 0%, 98%);
+    max-width: 100vw;
+}
+header {
+    text-align: center;
+    padding: 3rem 27rem;
+}
+h1 {
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+    font-size: 2rem;
+    margin-top: 0.5rem;
+}
+h2 {
+    color: hsl(234, 12%, 34%);
+    font-weight: 200;
+    font-size: 2rem;
+}
+header p {
+    color: hsl(229, 6%, 66%);
+    margin-top: 1.2rem;
+    line-height: 1.5rem;
+}
+main {
+    display: grid;
+    gap: 2rem;
+    justify-content: space-evenly;
+    width: 69rem;
+    margin: auto;
+    margin-bottom: 5rem;
+    padding: 1.5rem;
+}
+.container {
+    width: 21rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 0.3rem;
+    box-shadow: 0.05rem 0.05rem 1rem hsl(229, 23%, 86%);
+
+}
+.container h3 {
+    color: hsl(234, 12%, 34%);
+}
+.container p {
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.5rem;
+    color: hsl(234, 12%, 34%);
+}
+.container div {
+    display: flex;
+    justify-content: right;
+}
+.first-container {
+    grid-area: 2/1/4/3;
+    border-top: solid;
+    border-top-width: 0.3rem;
+    border-top-color: hsl(180, 62%, 55%);
+}
+.second-container{
+    grid-area: 1/3/3/5;
+    border-top: solid;
+    border-top-width: 0.3rem;
+    border-top-color: hsl(0, 78%, 62%);
+}
+.third-container {
+    grid-area: 3/3/7/5;
+    border-top: solid;
+    border-top-width: 0.3rem;
+    border-top-color: hsl(34, 97%, 64%);
+}
+.fourth-container {
+    grid-area: 2/5/4/7;
+    border-top: solid;
+    border-top-width: 0.3rem;
+    border-top-color: hsl(212, 86%, 64%);
+}
+@media screen and (max-width:375px) {
+    body {
+        margin-bottom: 6rem;
+    }
+    header {
+        padding: 0mm;
+        margin: 6rem 2rem 5rem;
+    }
+    h1 {
+        font-size: 1.7rem;
+    }
+    h2 {
+        font-size: 1.7rem;
+    }
+    header p {
+        font-size: 1.1rem;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        margin: auto;
+        padding: 0%;
+        
+    }
+    .container {
+        width: 19rem;
+        padding: 1.5rem;
+    }
+}
